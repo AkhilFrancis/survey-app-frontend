@@ -1,0 +1,123 @@
+.surveys-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-survey-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .create-survey-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-survey-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-survey-btn svg {
+    margin-right: 5px;
+  }
+  
+  .survey-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .survey-item {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .survey-title {
+    flex: 1;
+  }
+  
+  .survey-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .survey-link:hover {
+    color: #007bff;
+  }
+  
+  .survey-status {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .status.completed {
+    color: #28a745;
+  }
+  
+  .status.pending {
+    color: #dc3545;
+  }
+  
+  .status svg {
+    margin-right: 5px;
+  }
+  
+  .admin-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-link,
+  .view-responses-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .edit-link:hover,
+  .view-responses-link:hover {
+    color: #0056b3;
+  }
+  
+  .edit-link svg,
+  .view-responses-link svg {
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .survey-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .admin-actions {
+      margin-top: 10px;
+    }
+  }
