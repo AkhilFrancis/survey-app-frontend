@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchSurveyResponses } from '../../services/api';
+import './css/SurveyResponses.css'; // Importing the CSS file for SurveyResponses styling
 
 const SurveyResponses = () => {
   const { id } = useParams();
@@ -47,26 +48,26 @@ const SurveyResponses = () => {
   };
 
   return (
-    <div>
+    <div className="survey-responses">
       <h1>Responses for {responsesData.survey.title}</h1>
       {responsesData.responses.map((versionResponse, index) => (
-        <div key={index}>
+        <div key={index} className="version-response">
           <h2>Version {versionResponse.version.version}</h2>
           {versionResponse.responses.map((response, idx) => {
             const groupedResponses = groupResponsesByQuestion(response.responseDetails);
             return (
-              <div key={idx}>
+              <div key={idx} className="response-block">
                 <h3>Response by {response.user.name}</h3>
                 <ul>
                   {Object.keys(groupedResponses).map((questionId, detailIdx) => {
                     const detail = groupedResponses[questionId];
                     return (
                       <li key={detailIdx}>
-                        <p>Question: {detail.questionText}</p>
+                        <p className="question-text">Question: {detail.questionText}</p>
                         {detail.freeFormAnswer ? (
-                          <p>Answer: {detail.freeFormAnswer}</p>
+                          <p className="free-form-answer">Answer: {detail.freeFormAnswer}</p>
                         ) : (
-                          <p>Selected Options: {detail.selectedOptions.join(', ')}</p>
+                          <p className="selected-options">Selected Options: {detail.selectedOptions.join(', ')}</p>
                         )}
                       </li>
                     );

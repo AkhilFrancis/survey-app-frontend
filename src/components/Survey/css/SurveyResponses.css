@@ -1,0 +1,66 @@
+/* SurveyResponses.css */
+
+.survey-responses {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .survey-responses h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .version-response {
+    margin-bottom: 30px;
+  }
+  
+  .version-response h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .response-block {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .response-block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2196f3;
+  }
+  
+  .response-block ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .response-block li {
+    margin-bottom: 10px;
+  }
+  
+  .response-block li p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .question-text {
+    font-weight: bold;
+  }
+  
+  .free-form-answer {
+    font-style: italic;
+  }
+  
+  .selected-options {
+    color: #ff5722;
+  }
+  

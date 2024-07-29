@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetchSurveyDetails, fetchUserSurveyResponse, submitSurveyResponse } from '../../services/api';
-import './SurveyDetails.css'; // Importing the CSS file for SurveyDetails styling
+import './css/SurveyDetails.css'; // Importing the CSS file for SurveyDetails styling
 
 const SurveyDetails = () => {
   const { id } = useParams();

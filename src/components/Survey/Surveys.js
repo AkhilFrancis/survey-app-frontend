@@ -3,7 +3,7 @@ import { AuthContext } from '../../contexts/AuthContext';
 import { Link } from 'react-router-dom';
 import { fetchSurveys } from '../../services/api';
 import { FaEdit, FaEye, FaPlus, FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
-import './Surveys.css'; // Importing the CSS file for Surveys styling
+import './css/Surveys.css'; // Importing the CSS file for Surveys styling
 
 const Surveys = () => {
   const [surveys, setSurveys] = useState([]);
