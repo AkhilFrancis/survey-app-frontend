@@ -20,7 +20,7 @@ This is the frontend application for the Survey Management System. It is built u
 1. Clone the repository:
 
 \`\`\`bash
-git clone https://github.com/yourusername/survey-management-frontend.git
+git clone https://github.com/akhilfrancis/survey-management-frontend.git
 cd survey-management-frontend
 \`\`\`
 
